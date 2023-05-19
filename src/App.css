@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.App {
+    text-align: center;
+    scroll-behavior: smooth;
+}
+
+
+
+@media (min-width: 768px) {
+    .dev-image {
+        width: 26rem;
+        height: 26rem;
+    }
+}
+
+
+
