@@ -16,23 +16,24 @@ const Nav = () => {
     const [open, setOpen] = useState(false)
 
     useEffect(() => {
-        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-            setTheme('dark')
-        } else {
-            setTheme('light')
+        const savedDarkMode = localStorage.getItem('darkMode');
+        if (savedDarkMode) {
+          setTheme(JSON.parse(savedDarkMode));
         }
-    }, [])
+      }, []);
 
-    useEffect(() => {
-        if (theme === 'dark') {
-            document.documentElement.classList.add('dark')
+      useEffect(() => {
+        if (theme) {
+          document.body.classList.add('dark');
         } else {
-            document.documentElement.classList.remove('dark')
+          document.body.classList.remove('dark');
         }
-    }, [theme]);
+      }, [theme]);
 
-    const themeSwitch = () => {
-        setTheme(theme === 'dark' ? 'light' : 'dark')
+      const themeSwitch = () => {
+        const newMode = !theme;
+        setTheme(newMode);
+        localStorage.setItem('darkMode', JSON.stringify(newMode));
     }
 
     return (

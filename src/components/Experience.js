@@ -8,7 +8,7 @@ const Experience = () => {
                     Experience
                 </h1>
             </div>
-            <div className={"h-full md:mt-56 mt-64 flex flex-col justify-center items-center"}>
+            <div className={"h-full md:mt-56 mt-64 flex flex-col-reverse justify-center items-center"}>
                 {userData.experience.map((exp, idx) => (
                     <>
                         <MyCard
@@ -27,7 +27,7 @@ const Experience = () => {
 
 const MyCard = ({ title, company, year, desc }) => {
     return (
-        <div className="block md:w-1/2 p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-100 dark:border-gray-700 dark:hover:bg-gray-300">
+        <div className="block md:w-1/2 p-6 my-24 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-100 dark:border-gray-700 dark:hover:bg-gray-300">
             <h1 className={"relative -top-20 md:right-56 text-5xl text-gray-600 dark:text-gray-600"}>
                 {year}
             </h1>

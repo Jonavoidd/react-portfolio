@@ -22,8 +22,14 @@ const userData = {
         {
             title: "Student",
             company: "SWU PHINMA",
-            year: "2022-202?",
-            desc: "A student learning to become a better software engineer by the day.",
+            year: "2022",
+            desc: "Started studying Bachelor of Science in Information Technology",
+        },
+        {
+            title: "Freelancer",
+            company: "Freelance",
+            year: "2023",
+            desc: "Got my first freelance job creating a website during summer break.",
         },
     ],
 
