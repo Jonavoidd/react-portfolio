@@ -1,13 +1,13 @@
-import React, {useState, useEffect} from "react";
-import {BsFillMoonStarsFill} from "react-icons/bs";
-import {BsFillBrightnessLowFill} from "react-icons/bs"
-import {Link} from "react-router-dom"
-import {IonIcon} from "@ionic/react";
-import {menu} from "ionicons/icons"
-import {close} from "ionicons/icons"
+import React, { useState, useEffect } from "react";
+import { BsFillMoonStarsFill } from "react-icons/bs";
+import { BsFillBrightnessLowFill } from "react-icons/bs"
+import { Link } from "react-router-dom"
+import { IonIcon } from "@ionic/react";
+import { menu } from "ionicons/icons"
+import { close } from "ionicons/icons"
 
 
-let MyButton = ({children}) => {
+let MyButton = ({ children }) => {
     return <button>{children}</button>;
 }
 
@@ -16,21 +16,29 @@ const Nav = () => {
     const [open, setOpen] = useState(false)
 
     useEffect(() => {
+        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            setTheme('dark')
+        } else {
+            setTheme('light')
+        }
+    }, [])
+
+    useEffect(() => {
         const savedDarkMode = localStorage.getItem('darkMode');
         if (savedDarkMode) {
-          setTheme(JSON.parse(savedDarkMode));
+            setTheme(JSON.parse(savedDarkMode));
         }
-      }, []);
+    }, []);
 
-      useEffect(() => {
+    useEffect(() => {
         if (theme) {
-          document.body.classList.add('dark');
+            document.body.classList.add('dark');
         } else {
-          document.body.classList.remove('dark');
+            document.body.classList.remove('dark');
         }
-      }, [theme]);
+    }, [theme]);
 
-      const themeSwitch = () => {
+    const themeSwitch = () => {
         const newMode = !theme;
         setTheme(newMode);
         localStorage.setItem('darkMode', JSON.stringify(newMode));
@@ -57,8 +65,8 @@ const Nav = () => {
                 />
             </div>
             <div className={"absolute md:right-8 right-12 md:top-8 top-7 text-4xl md:hidden md:z-0 z-50"}
-                 onClick={() => setOpen(!open)}>
-                <IonIcon icon={open ? close : menu} className={"text-black dark:text-white"}/>
+                onClick={() => setOpen(!open)}>
+                <IonIcon icon={open ? close : menu} className={"text-black dark:text-white"} />
             </div>
             <ul className={`md:flex md:justify-between justify-center ${!open ? 'hidden' : ''}`}>
                 <li className={"md:mr-12 md:ml-0 ml-64 md:my-0 my-7 z-10"}>
