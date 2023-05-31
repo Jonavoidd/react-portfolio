@@ -14,35 +14,35 @@ const Resume = () => {
                 </h1>
             </div>
             <div className={"mt-12"}>
-                <div className={"flex flex-col items-start md:flex-row md:columns-4 p-4"}>
+                <div className={"flex flex-col items-start lg:flex-row md:columns-4 p-4"}>
                     <div className={"items-start text-start"}>
-                        <h1 className={"font-bold ml-6 md:ml-52 text-2xl md:text-3xl"}>
+                        <h1 className={"font-bold ml-6 lg:ml-52 text-2xl md:text-4xl lg:text-3xl"}>
                             EDUCATION
                         </h1>
-                        <h1 className={"my-1 font-bold ml-6 md:ml-52 text-1xl md:text-2xl text-start"}>
+                        <h1 className={"my-1 font-bold ml-6 lg:ml-52 text-1xl md:text-3xl lg:text-2xl text-start"}>
                             Southwestern University PHINMA
                         </h1>
-                        <h1 className={"ml-[1.47rem] md:ml-52 text-[14px] text-start"}>
+                        <h1 className={"ml-[1.47rem] lg:ml-52 text-[14px] md:text-[1rem] lg:text-[14px] text-start"}>
                             Bachelor of Science in Information Technology
                         </h1>
 
                         <br />
                         <br />
 
-                        <h1 className={"my-1 font-bold ml-6 md:ml-52 text-1xl md:text-2xl"}>
+                        <h1 className={"my-1 font-bold ml-6 lg:ml-52 text-1xl md:text-3xl lg:text-2xl"}>
                             BIT International College
                         </h1>
-                        <h1 className={"ml-[1.47rem] md:ml-52 text-[14px] text-start"}>
+                        <h1 className={"ml-[1.47rem] lg:ml-52 text-[14px] md:text-[1rem] lg:text-[14px] text-start"}>
                             Science, Technology, Engineering and Mathematics (STEM)
                         </h1>
 
                         <br />
                         <br />
 
-                        <h1 className={"font-bold ml-6 md:ml-52 text-2xl md:text-3xl"}>
+                        <h1 className={"font-bold ml-6 lg:ml-52 text-2xl md:text-4xl lg:text-3xl"}>
                             SKILLS
                         </h1>
-                        <h1 className={"ml-[1.47rem] md:ml-52 text-[14px] text-start"}>
+                        <h1 className={"ml-[1.47rem] lg:ml-52 text-[14px] md:text-[1rem] lg:text-[14px] text-start"}>
                             • Leadership <br />
                             • Adaptable <br />
                             • Learner <br />
@@ -57,10 +57,10 @@ const Resume = () => {
 
                     <div className={"items-start text-start md:flex md:flex-col-reverse"}>
                         <div>
-                            <h1 className={"font-bold ml-6 md:ml-52 md:mt-[6.5rem] text-2xl md:text-3xl"}>
+                            <h1 className={"font-bold ml-6 lg:ml-52 text-2xl md:text-4xl lg:text-3xl"}>
                                 TOOLS
                             </h1>
-                            <h1 className={"ml-[1.47rem] md:ml-52 text-[14px] text-start"}>
+                            <h1 className={"ml-[1.47rem] lg:ml-52 text-[14px] md:text-[1rem] lg:text-[14px] text-start"}>
                                 • Java <br />
                                 • Python <br />
                                 • React JS <br />
@@ -76,10 +76,10 @@ const Resume = () => {
                         <br />
 
                         <div>
-                            <h1 className={"font-bold ml-6 md:ml-52 text-2xl md:text-3xl"}>
+                            <h1 className={"font-bold ml-6 lg:ml-52 text-2xl md:text-4xl lg:text-3xl"}>
                                 ACHIEVEMENTS
                             </h1>
-                            <h1 className={"ml-[1.47rem] md:ml-52 text-[14px] text-start"}>
+                            <h1 className={"ml-[1.47rem] lg:ml-52 text-[14px] md:text-[1rem] lg:text-[14px] text-start"}>
                                 • Attended coding workshops <br />
                                 • Volunteered to multiple start up events <br />
                                 • Created a few programs with Programming

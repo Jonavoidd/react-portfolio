@@ -6,37 +6,41 @@ const About = () => {
         <section>
             <div className={"min-h-screen md:flex flex-col"}>
                 <div className={"md:h-56 max-w-6xl mx-auto"}>
-                    <h1 className={"about-h1 md:text-8xl text-5xl font-bold py-20 md:h-full text-center md:text-left w-full md:-ml-96 text-gray-900 dark:text-gray-200"}>
+                    <h1 className={"about-h1 md:text-8xl text-5xl font-bold py-20 lg:h-full text-center lg:text-left w-full lg:-ml-96 text-gray-900 dark:text-gray-200"}>
                         About
                     </h1>
                 </div>
                 <div className={"min-h-screen bg-gray-200 dark:bg-black"}>
-                    <div className={"max-x-6xl md:px-36 px-12 pt-10"}>
-                        <p className={"font-oswald md:text-3xl text-2xl md:mt-12 md:px-16 leading-7 md:text-left text-center text-gray-800 dark:text-gray-200"}>
+                    <div className={"max-x-6xl md:px-32 lg:px-36 px-12 pt-10"}>
+                        <p className={"font-oswald md:text-3xl text-2xl md:mt-12 lg:px-16 leading-7 text-center lg:text-left text-gray-800 dark:text-gray-200"}>
                             {userData.about.title}
                         </p>
                     </div>
-                    <div className={"min-h-screen w-full md:mt-12 md:pt-24 md:px-48 md:py-10 py-24 md:grid md:grid-cols-20/80 md:gap-3 mx-auto flex flex-col"}>
-                        <div className={"md:w-44 h-full flex flex-col"}>
-                            <h1 className={"md:text-left text-bold md:text-4xl text-3xl text-gray-700 dark:text-gray-200"}>
+                    <div className={"min-h-screen w-full md:mt-12 md:pt-24 md:px-48 md:py-10 py-24 lg:grid lg:grid-cols-20/80 lg:gap-3 mx-auto flex flex-col md:flex-col-reverse"}>
+                        <div className={"lg:w-44 h-full flex flex-col"}>
+                            <h1 className={"lg:text-left text-bold md:text-4xl text-3xl text-gray-700 dark:text-gray-200"}>
                                 Contact
                             </h1>
-                            <p className={"md:mt-12 md:w-44 w-56 md:m-0 m-auto md:text-left text-justify md:text-2xl text-gray-600 dark:text-gray-200"}>
+                            <p className={"md:mt-12 md:w-44 w-56 lg:m-0 m-auto lg:text-left text-justify md:text-2xl text-gray-600 dark:text-gray-200"}>
                                 For any inquiries feel free to send me an <span
                                 className={"font-bold border-b-2 border-gray-800 hover:text-gray-500 hover:border-gray-500 duration-500"}>
                                 <a href={"mailto:kurtjonathangozano@gmail.com"}>
                                 email
                                 </a></span>
                             </p>
+
                             <br/><br/><br/><br/>
-                            <h1 className={"text-gray-700 dark:text-gray-200 text-3xl md:m-0 m-auto md:text-left"}>
+
+                            <h1 className={"text-gray-700 dark:text-gray-200 text-3xl lg:m-0 m-auto lg:text-left"}>
                                 Social Links
                             </h1>
-                            <div className={"md:mt-4 text-left md:-ml-10"}>
+                            <div className={"md:mt-4 text-left lg:-ml-10"}>
                                 <div className={"flex flex-col justify-start items-center md:text-xl"}>
-                                    <a href={userData.socialLinks.facebook}
-                                       className={"flex flex-row justify-start items-center space-x-4"}
-                                       target={"__blank"}>
+                                    <a 
+                                        href={userData.socialLinks.facebook}
+                                        className={"flex flex-row justify-start items-center space-x-4"}
+                                        target={"__blank"}
+                                    >
                                         <div className={"my-4"}>
                                             →
                                         </div>
@@ -49,9 +53,11 @@ const About = () => {
                                     </a>
                                 </div>
                                 <div className={"flex flex-col justify-start items-center md:text-xl"}>
-                                    <a href={userData.socialLinks.instagram}
-                                       className={"flex flex-row justify-start items-center space-x-4"}
-                                       target={"__blank"}>
+                                    <a 
+                                        href={userData.socialLinks.instagram}
+                                        className={"flex flex-row justify-start items-center space-x-4"}
+                                        target={"__blank"}
+                                    >
                                         <div className={"my-4"}>
                                             →
                                         </div>
@@ -64,9 +70,11 @@ const About = () => {
                                     </a>
                                 </div>
                                 <div className={"flex flex-col justify-start items-center md:text-xl"}>
-                                    <a href={userData.socialLinks.twitter}
-                                       className={"flex flex-row justify-start items-center space-x-4 md:-ml-7"}
-                                       target={"__blank"}>
+                                    <a 
+                                        href={userData.socialLinks.twitter}
+                                        className={"flex flex-row justify-start items-center space-x-4 md:-ml-7"}
+                                        target={"__blank"}
+                                    >
                                         <div className={"my-4"}>
                                             →
                                         </div>
@@ -79,9 +87,11 @@ const About = () => {
                                     </a>
                                 </div>
                                 <div className={"flex flex-col justify-start items-center md:text-xl"}>
-                                    <a href={userData.socialLinks.github}
-                                       className={"flex flex-row justify-start items-center space-x-4 md:-ml-7"}
-                                       target={"__blank"}>
+                                    <a 
+                                        href={userData.socialLinks.github}
+                                        className={"flex flex-row justify-start items-center space-x-4 md:-ml-7"}
+                                        target={"__blank"}
+                                    >
                                         <div className={"my-4"}>
                                             →
                                         </div>
@@ -95,7 +105,7 @@ const About = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className={"md:ml-12 col-span-1 md:col-span-1 order-first sm:order-last h-full"}>
+                        <div className={"lg:ml-12 col-span-1 lg:col-span-1 order-first sm:order-last h-full"}>
                             {userData.about.description?.map((desc, idx) => (
                                 <p
                                     key={idx}

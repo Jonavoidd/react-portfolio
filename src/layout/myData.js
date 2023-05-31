@@ -33,6 +33,13 @@ const userData = {
         },
     ],
 
+    projects: [
+        {
+            title: "GED portfolio",
+            bgImage: "",
+        }
+    ],
+
     socialLinks: {
         instagram: "https://www.instagram.com/kurt_gozano/",
         twitter: "https://twitter.com/jg_kurt",

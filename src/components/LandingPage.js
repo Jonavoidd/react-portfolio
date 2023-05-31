@@ -4,8 +4,8 @@ import userData from "../layout/myData.js"
 const Land = () => {
     return (
         <section className={"h-full"}>
-            <div className={" flex md:flex-row flex-col-reverse justify-between"}>
-                <div className={"md:float-left md:pt-56 md:pb-0 pt-12 pb-36 md:ml-64 items-center"}>
+            <div className={" flex lg:flex-row flex-col-reverse justify-between"}>
+                <div className={"lg:float-left lg:pt-56 lg:pb-0 pt-12 pb-36 lg:ml-64 justify-center items-center"}>
                     <div className={"flex flex-col"}>
                         <h1 className={"text-3xl"}>Hi! I'm <span className={"font-bold"}>Kurt</span></h1>
                     </div>
@@ -16,7 +16,7 @@ const Land = () => {
                     </p>
 
                 </div>
-                <div className={"md:float-left md:p-12 p-8 md:pr-44 rounded-2xl"}>
+                <div className={"p-8 lg:float-left lg:p-12 lg:pr-44 rounded-2xl flex justify-center items-center"}>
                     <img src={userData.avatarUrlTwo} alt={"dev"} className={"dev-image rounded-3xl object-cover"}/>
                 </div>
             </div>
