@@ -3,7 +3,7 @@ import userData from "../layout/myData";
 const Experience = () => {
     return (
         <section className={"dark:bg-black"}>
-            <div classname={"max-w-6xl h-48"}>
+            <div className={"max-w-6xl h-48"}>
                 <h1 className={"md:text-8xl text-5xl relative md:-left-36 md:top-12 top-20"}>
                     Experience
                 </h1>

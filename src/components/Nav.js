@@ -79,11 +79,11 @@ const Nav = () => {
                         <MyButton>Resume</MyButton>
                     </Link>
                 </li>
-                {/* <li className={"lg:mr-12 lg:my-0 my-7 z-10"}>
+                <li className={"lg:mr-12 lg:my-0 my-7 z-10"}>
                     <Link to={"/projects"} className={"hover:text-gray-500 duration-500"}>
                         <MyButton>Projects</MyButton>
                     </Link>
-                </li> */}
+                </li>
                 <li className={"lg:mr-12 lg:my-0 my-7 z-10"}>
                     <Link to={"/experience"} className={"hover:text-gray-500 duration-500"}>
                         <MyButton>Experience</MyButton>
